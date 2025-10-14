@@ -1,27 +1,22 @@
-class Student {
-    public String sname;
-    public String usn;
-    public char section;
-    public int sem;
+public class Lab2 {
+    public static void main(String args[]) {
+        System.out.println("The number of arguments are: " + args.length);
 
-    public Student(String sname, String usn, char section, int sem) {
-        this.sname = sname;
-        this.usn = usn;
-        this.section = section;
-        this.sem = sem;
-    }
+        if (args.length == 4) {
+            for (int i = 0; i < args.length; i++) {
+                System.out.println("args[" + i + "]: " + args[i]);
+            }
 
-    public void display() {
-        System.out.println("Student name is " + sname);
-        System.out.println("Student's USN is " + usn);
-        System.out.println("Student is in section " + section);
-        System.out.println("Student is in " + Sem + " sem");
-    }
-}
+            String empId = args[0];
+            String name = args[1];
+            String department = args[2];
+            String email = args[3];
 
-public class Prog2 {
-    public static void main(String[] args) {
-        Student std = new Student("ABC", "1RUA24SCS0015", 'A', 3);
-        std.display();
+            System.out.println("--- Employee Details ---");
+            System.out.println("ID: " + empId);
+            System.out.println("Name: " + name);
+            System.out.println("Department: " + department);
+            System.out.println("Email: " + email);
+        }
     }
 }
