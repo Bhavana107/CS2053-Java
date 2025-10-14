@@ -2,7 +2,7 @@ class Vehicle {
     String brand;
 
     public Vehicle(String brand) {
-        // FIX: The parameter 'brand' is assigned to the class variable 'this.brand'
+    
         this.brand = brand;
     }
 
@@ -47,10 +47,11 @@ public class Prog3 {
         Car mycar = new Car("Toyota", 4);
         mycar.display();
 
-        System.out.println(); // For a blank line
+        System.out.println(); 
 
   
         ElectricCar myelectric = new ElectricCar("Tesla", 4, 100);
         myelectric.display();
     }
 }
+
